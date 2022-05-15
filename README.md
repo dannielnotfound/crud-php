@@ -1,3 +1,3 @@
 # crud-php
-CRUD utilizando a linguagem PHP com PDO.
+CRUD utilizando a linguagem de programação PHP.
 
