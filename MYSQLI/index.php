@@ -9,9 +9,6 @@
 <body>
     <?php 
         include("Class/ClassConexao.php");
-        $Conexao = new ClassConexao();
-        $Conexao->conectaDB();
-        //var_dump($Conexao->conectaDB());
     ?>
 </body>
 </html>
