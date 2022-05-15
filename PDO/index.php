@@ -8,19 +8,25 @@
     <title>CRUD - Php</title>
 </head>
 <body>
-    <div class="box">
-        <h1>CRUD: <span> PDO </span>&<span> MYSQLi </span></h1> 
-    </div>
-    <nav>
-        <ul>
-            <li><a href="">Cadastro</a></li>
-            <li><a href="">Seleção</a></li>
-            <li><a href="">Deletar</a></li>
-            <li><a href="">Atualização</a></li>
-        </ul>
-    </nav>
+    <header>
+        <div class="box">
+            <h1>CRUD: <span> PDO </span>&<span> MYSQLi </span></h1> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">Cadastro</a></li>
+                <li><a href="">Seleção</a></li>
+                <li><a href="">Deletar</a></li>
+                <li><a href="">Atualização</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
     <?php 
         include("Class/ClassConexao.php");
     ?>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam blanditiis atque assumenda. Nihil nulla, a eligendi laboriosam, tempore eaque consequatur porro, sapiente dignissimos ullam aliquid ea repellendus corrupti similique quisquam?
+    </main>
 </body>
 </html>

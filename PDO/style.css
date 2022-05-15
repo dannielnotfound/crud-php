@@ -57,3 +57,13 @@ a{
 a:hover{
     color: #fffcf9;
 }
+main{
+    margin: 0 auto;
+    position: relative;
+    width: 50%;
+    background-color: #EF476F;
+    min-height: 10px;
+    padding: 10px;
+    text-align: justify;
+    color: white;
+}
