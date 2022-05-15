@@ -1,2 +1,3 @@
 # crud-php
-teste
+CRUD utilizando a linguagem PHP com PDO.
+a
