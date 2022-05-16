@@ -14,7 +14,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="">Cadastro</a></li>
+                <li><a href="cadastro.php">Cadastro</a></li>
                 <li><a href="">Seleção</a></li>
                 <li><a href="">Deletar</a></li>
                 <li><a href="">Atualização</a></li>
