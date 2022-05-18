@@ -70,7 +70,7 @@ main{
 }
 .center-main-cadastro{
     top: 50%;
-    transform: translate(0,-120%);
+    transform: translate(0,-80%);
     width: 20%;
 }
 /* FORM CADASTRO */
