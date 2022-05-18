@@ -5,6 +5,7 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 body{
     background-color: #fffcf9;
@@ -15,11 +16,8 @@ body{
     position: relative;
     margin-top: 2rem;
 }
-h1{
+h1, h2, h3{
     font-weight: 400;
-    text-align: center;
-}
-h2{
     text-align: center;
 }
 
@@ -31,7 +29,6 @@ nav{
     margin: 1rem 0rem 1rem 0rem;
     width: 100%;
     height: 20px;
-   /* background-color: rgba(255, 0, 0, .3);*/
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -44,9 +41,7 @@ ul{
     justify-content: space-between;
 }
 li{
-
     border-radius: 5px;
-   /*background-color: #D64550;*/
     padding: 5px 10px;
 }
 li:hover{
@@ -65,9 +60,95 @@ main{
     margin: 0 auto;
     position: relative;
     width: 50%;
+    min-width: 220px;
     background-color: #EF476F;
     min-height: 10px;
     padding: 10px;
     text-align: justify;
     color: white;
+    border-radius: .5rem;
+}
+.center-main-cadastro{
+    top: 50%;
+    transform: translate(0,-120%);
+    width: 20%;
+}
+/* FORM CADASTRO */
+
+form{
+    margin: 0 auto;
+    width: 90%;
+   /* background-color: rgba(130, 226, 194, 0.144);*/
+    padding: 10px;
+}
+fieldset{
+    border: none;
+    border: 3px solid #fffcf9;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: .5rem;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.inputBox{
+    position: relative;
+}
+.genero{
+    position: relative;
+}
+input{
+    outline: none;
+    border: none;
+    border-radius: .2rem;
+    padding: .2rem;
+    letter-spacing: .1rem;
+
+}
+.full{
+    width: 100%;
+}
+#subm{
+    width: 20%;
+    min-width: 50px;
+    margin: 0 auto;
+    cursor: pointer;
+    letter-spacing: 0;
+    border: none;
+    background-color: #fffcf9;
+    color: #EF476F;
+    font-weight: 600;
+}
+legend{
+    text-align: center;
+}
+label{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    padding: .2rem;
+    font-weight: 500;
+    transition: .3s;
+    color: #EF476F;
+}
+.labelToTop{
+    display: block;
+    position: absolute;
+    z-index: 5;
+    top: -25px;
+    font-size: 1rem;
+    color: #fffcf9;
+}
+.genero{
+    color: #fffcf9;
+}
+
+.input-box:hover ~ .contrast{
+    color: black;
 }
