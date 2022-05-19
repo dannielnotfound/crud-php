@@ -1,9 +1,11 @@
 <?php
+
 include("../Includes/Variaveis.php");
-echo "
-    $Id <br>
-    $Nome <br>
-    $Genero <br>
-    $Cidade <br>
-";
+include("../Class/ClassCrud.php");
+echo "$Id<br> $Nome<br> $Genero<br> $Cidade";
+$Crud = new ClassCrud();
+$Crud->insertDB("cadastro", "?, ?, ?, ?", array($Id, $Nome, $Genero, $Cidade));
+echo "Cadastro realizado com sucesso.";
+
+
 ?>

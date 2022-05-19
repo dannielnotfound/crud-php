@@ -7,11 +7,6 @@
             main[0].classList.add('center-main-cadastro');
         }
     </script>
-    <?php
-    include("Class/ClassConexao.php");
-    include("Class/ClassCrud.php");
-    $Crud = new ClassCrud();
-    ?>
     <div class="form-box">
         <form name="FormCadastro" id= "FormCadastro" action="Controllers/ControllerCadastro.php" method="post">
             <fieldset>

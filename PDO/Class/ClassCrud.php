@@ -1,4 +1,6 @@
 <?php
+
+    include("ClassConexao.php");
     class ClassCrud extends ClassConexao{
 
         #Atributos
@@ -11,7 +13,7 @@
             $this->Crud=$this->conectaDB()->prepare($Query);
             #Bind Value
             if($this->Contador > 0){
-                for($i = 0; $i <= $this->Contador; $i++ ){
+                for($i = 1; $i <= $this->Contador; $i++){
                     $this->Crud->bindValue($i, $Parametros[$i-1]); #Vincula um valor para um parâmetro de um array
                 }
             }
@@ -21,6 +23,12 @@
         #Contador de parâmetros
         private function countParametros($Parametros){
             $this->Contador=count($Parametros);
+        }
+
+        #Inserção no Banco de Dados
+        public function insertDB($Tabela, $Condicao, $Parametros){
+            $this->preparedStatements("insert into {$Tabela} values ({$Condicao})", $Parametros);
+            return $this->Crud;
         }
     }
 ?>
