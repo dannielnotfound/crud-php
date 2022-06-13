@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>CRUD - Php</title>
+    <script src="https://kit.fontawesome.com/772fabf42a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>

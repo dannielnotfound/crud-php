@@ -30,5 +30,11 @@
             $this->preparedStatements("insert into {$Tabela} values ({$Condicao})", $Parametros);
             return $this->Crud;
         }
+
+        #Seleção no Banco de Dados
+        public function selectInDB($Campos, $Tabela, $Condicao, $Parametros){
+            $this->preparedStatements("select {$Campos} from {$Tabela} {$Condicao}", $Parametros);
+            return $this->Crud;
+        }
     }
 ?>
