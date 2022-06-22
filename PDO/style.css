@@ -11,6 +11,7 @@ body{
     background-color: #fffcf9;
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
 }
 .box{
     position: relative;
@@ -152,4 +153,43 @@ label{
 
 .input-box:hover ~ .contrast{
     color: black;
+}
+
+/* SELEÇÃO STYLE */
+
+.min-width-selecao{
+    min-width: 580px;
+}
+.TabelaCrud{
+    width: 100%;
+}
+.fisrtChild{
+    font-weight: 600;
+    background-color: #fffcf9c5;
+    color: #f31448;
+}
+tr{
+    background-color: #f31448;
+    text-align: center;
+}
+
+/* Icons */
+.icons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.fa, .fas {
+    font-weight: 900;
+    font-size: 1rem;
+    color: #fffcf9;
+}
+
+/* Visualizar */
+.div{
+    height: 1.5px;
+    width: 100%;
+    background-color: #fffcf9;
+    margin: .5rem 0rem;
 }
