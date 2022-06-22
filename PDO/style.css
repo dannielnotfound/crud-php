@@ -157,7 +157,9 @@ label{
 
 /* SELEÇÃO STYLE */
 
-
+.min-width-selecao{
+    min-width: 580px;
+}
 .TabelaCrud{
     width: 100%;
 }
@@ -182,4 +184,12 @@ tr{
     font-weight: 900;
     font-size: 1rem;
     color: #fffcf9;
+}
+
+/* Visualizar */
+.div{
+    height: 1.5px;
+    width: 100%;
+    background-color: #fffcf9;
+    margin: .5rem 0rem;
 }

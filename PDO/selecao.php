@@ -38,19 +38,21 @@
                     <td><?php echo $Fetch['Email'] ?></td>
                     <td>
                         <div class="icons">
-                            <a href="" alt="Editar"><i class="fa fa-pen" aria-hidden="true"></i></a>
-                            <a href="" alt="Deletar"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                            <a href="" alt="Vizualizar"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                            <a href="<?php echo "cadastro.php?id={$Fetch['Id']}";?>" alt="Editar"><i class="fa fa-pen" aria-hidden="true"></i></a>
+                            <a class="deletar" href="<?php echo "deletar.php?id={$Fetch['Id']}";?>" alt="Deletar"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                            <a href="<?php echo "visualizar.php?id={$Fetch['Id']}";?>" alt="Visualizar"><i class="fa fa-eye" aria-hidden="true"></i></a>
                         </div>
                     </td>
                 </tr>
             <?php } ?>
         </table>
         <script>
+            /*
             const tableRowsBG = document.getElementsByTagName('tr');
             for(i=1; i<tableRowsBG.length; i++){
                 tableRowsBG[i + i].classList.add('changeBG');
             };
+            */
         </script>
         <div class="line"></div>
     </main>

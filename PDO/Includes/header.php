@@ -17,7 +17,7 @@
             <ul>
                 <li><a href="cadastro.php">Cadastro</a></li>
                 <li><a href="selecao.php">Seleção</a></li>
-                <li><a href="delete.php">Deletar</a></li>
+                <li><a href="deletar.php">Deletar</a></li>
                 <li><a href="atualizacao.php">Atualização</a></li>
             </ul>
         </nav>

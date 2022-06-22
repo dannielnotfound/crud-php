@@ -36,5 +36,11 @@
             $this->preparedStatements("select {$Campos} from {$Tabela} {$Condicao}", $Parametros);
             return $this->Crud;
         }
+
+        #Deletar Dados no DB
+        public function deleteDB($Tabela, $Condicao, $Parametros){
+            $this->preparedStatements("delete from {$Tabela} where {$Condicao}", $Parametros);
+            return $this->Crud;
+        }
     }
 ?>
